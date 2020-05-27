@@ -189,7 +189,7 @@ class Bills extends Component {
   render() {
 
     const { user } = this.props.auth;
-    console.log(this.state.bills)
+    // console.log(this.state.bills)
 
     //Calculate home bills:
     const homeBillAmounts = []

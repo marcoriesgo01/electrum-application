@@ -33,7 +33,7 @@ class Banking extends Component {
 
     const { user} = this.props;
     const { transactions} = this.props.plaid;
-    console.log(transactions)
+    // console.log(transactions)
 
     let transactionsData = []
     transactions.forEach(function(account){
@@ -83,12 +83,12 @@ class Banking extends Component {
         )
       }
     })}
-    console.log(foodTransactions)
-    console.log(shopsTransactions)
-    console.log(paymentTransactions)
-    console.log(travelTransactions)
-    console.log(transferTransactions)
-    console.log(recreationTransactions)
+    // console.log(foodTransactions)
+    // console.log(shopsTransactions)
+    // console.log(paymentTransactions)
+    // console.log(travelTransactions)
+    // console.log(transferTransactions)
+    // console.log(recreationTransactions)
 
     // Calculate Total Food Expenses:
     const foodExpenseAmounts = []
@@ -99,7 +99,7 @@ class Banking extends Component {
     })
     const addFoodExpenses = array => array.reduce((a, b) => a + b, 0);
     var totalFoodExpense = (addFoodExpenses(foodExpenseAmounts)).toFixed(2);
-    console.log(foodExpenseAmounts)
+    // console.log(foodExpenseAmounts)
 
     // Calculate Total Shops Expenses:
     const shopExpenseAmounts = []
@@ -110,7 +110,7 @@ class Banking extends Component {
     })
     const addShopExpenses = array => array.reduce((a, b) => a + b, 0);
     var totalShopExpense = (addShopExpenses(shopExpenseAmounts)).toFixed(2);
-    console.log(shopExpenseAmounts)
+    // console.log(shopExpenseAmounts)
 
     // Calculate Total Payment Expenses:
     const paymentExpenseAmounts = []
@@ -121,7 +121,7 @@ class Banking extends Component {
     })
     const addPaymentExpenses = array => array.reduce((a, b) => a + b, 0);
     var totalPaymentExpense = (addPaymentExpenses(paymentExpenseAmounts)).toFixed(2);
-    console.log(paymentExpenseAmounts)
+    // console.log(paymentExpenseAmounts)
 
     // Calculate Total Travel Expenses:
     const travelExpenseAmounts = []
@@ -132,7 +132,7 @@ class Banking extends Component {
     })
     const addTravelExpenses = array => array.reduce((a, b) => a + b, 0);
     var totalTravelExpense = (addTravelExpenses(travelExpenseAmounts)).toFixed(2);
-    console.log(travelExpenseAmounts)
+    // console.log(travelExpenseAmounts)
 
     // Calculate Total Transfer Expenses:
     const transferExpenseAmounts = []
@@ -143,7 +143,7 @@ class Banking extends Component {
     })
     const addTransferExpenses = array => array.reduce((a, b) => a + b, 0);
     var totalTransferExpense = (addTransferExpenses(transferExpenseAmounts)).toFixed(2);
-    console.log(transferExpenseAmounts)
+    // console.log(transferExpenseAmounts)
 
     // Calculate Total Recreation Expenses:
     const recreationExpenseAmounts = []
@@ -154,7 +154,7 @@ class Banking extends Component {
     })
     const addRecreationExpenses = array => array.reduce((a, b) => a + b, 0);
     var totalRecreationExpense = (addRecreationExpenses(recreationExpenseAmounts)).toFixed(2);
-    console.log(recreationExpenseAmounts)
+    // console.log(recreationExpenseAmounts)
 
     //Setup the bar chart
     const doughnutChart = {

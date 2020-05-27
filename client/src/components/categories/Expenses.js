@@ -27,10 +27,8 @@ class Expenses extends Component {
   
   render() {
     const { user } = this.props.auth;
-    console.log(user.name)
 
     const { accounts } = this.props.plaid;
-    console.log(accounts)
 
     // const { accounts, accountsLoading } = this.props.plaid;
     // console.log(this.state.accounts)

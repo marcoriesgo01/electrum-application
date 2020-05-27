@@ -199,8 +199,8 @@ class Investments extends Component {
 
 
     // These are th two arrays of data:
-    console.log(this.state.stockPricesArr)
-    console.log(this.state.investments)
+    // console.log(this.state.stockPricesArr)
+    // console.log(this.state.investments)
 
     let totalInvestmentPerCompany = []
     {this.state.investments.map( investment => {
@@ -217,11 +217,11 @@ class Investments extends Component {
         }
       }
     )}
-    console.log(totalInvestmentPerCompany)
+    // console.log(totalInvestmentPerCompany)
 
     const addTotalInvestments = array => array.reduce((a, b) => a + b, 0);
     var totalStockInvestment = addTotalInvestments(totalInvestmentPerCompany);
-    console.log(totalStockInvestment.toFixed(2))
+    // console.log(totalStockInvestment.toFixed(2))
 
     const doughnutChart = {
       labels: this.state.stockTags,

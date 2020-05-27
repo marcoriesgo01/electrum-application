@@ -136,8 +136,8 @@ class Budgets extends Component {
   
   render() {
     const { user } = this.props.auth;
-    console.log(this.state.user.user.id)
-    console.log(this.state.budgets)
+    // console.log(this.state.user.user.id)
+    // console.log(this.state.budgets)
 
     const budgetAmounts = []
     const budgetNames = []
@@ -147,12 +147,12 @@ class Budgets extends Component {
     this.state.budgets.map(function({name}){
       return budgetNames.push(name)
     })
-    console.log(budgetNames)
+    // console.log(budgetNames)
     const addBudgets = array => array.reduce((a, b) => a + b, 0);
     var totalBudget = addBudgets(budgetAmounts);
-    console.log(totalBudget)
+    // console.log(totalBudget)
 
-    console.log(Math.max(...budgetAmounts))
+    // console.log(Math.max(...budgetAmounts))
 
     //pie chart
     const chart = {
