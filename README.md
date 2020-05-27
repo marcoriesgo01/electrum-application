@@ -16,21 +16,21 @@ Electrum is an all-in-one personal finance application for users to link their b
 * CSS 
 * React 
 * React Router
-* React Materialize
+* [React Materialize](https://materializecss.com/)
 * Node.js
 * MongoDB
 * Express
-* Redux - Used for state management on banking and authorization
+* [Redux](https://redux.js.org/) - Used for state management on banking and authorization
 * Axios - Used for connecting to the API for authorization and banking.
 * Fetch - Used for API communication for user information
 * JWT Authorization
 * Passport
 * Mongoose
-* Plaid API - Used for connecting user bank accounts to Electrum
+* [Plaid API](https://plaid.com/) - Used for connecting user bank accounts to Electrum
 * Moment.js - Used for expirations and bank transaction dates
-* Chart.js - Used to analyze the user's information
-* IEX Cloud API - Used to analyze user's investments and their current value
-* Validate - Used to verify that useer information is valid.
+* [Chart.js](https://www.chartjs.org/) - Used to analyze the user's information
+* [IEX Cloud API](https://iexcloud.io/) - Used to analyze user's investments and their current value
+* [Validator](https://www.npmjs.com/package/validator) - Used to verify that useer information is valid.
 
 
 ### Problem: 
@@ -64,3 +64,7 @@ yarn install
 ![Wireframe 2](https://github.com/marcoriesgo01/electrum-client/blob/master/src/img/wireframe2.png?raw=true)
 
 ![Wireframe 3](https://github.com/marcoriesgo01/electrum-client/blob/master/src/img/wireframe3.png?raw=true)
+
+### Useful Links:
+
+[React Router Protected Routes](https://tylermcginnis.com/react-router-protected-routes-authentication/)
