@@ -16,13 +16,12 @@ Electrum is an all-in-one personal finance application for users to link their b
 * CSS 
 * React 
 * React Router
-* [React Materialize](https://materializecss.com/)
+* [Materialize](https://materializecss.com/)
 * Node.js
 * MongoDB
 * Express
 * [Redux](https://redux.js.org/) - Used for state management on banking and authorization
 * Axios - Used for connecting to the API for authorization and banking
-* Fetch - Used for API communication for user information
 * JWT Authorization
 * Passport
 * Mongoose
