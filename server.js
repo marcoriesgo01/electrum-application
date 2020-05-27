@@ -22,12 +22,21 @@ const port = process.env.PORT || 5000; // process.env.port is Heroku's port if y
 // DB Config
 const db = require("./config/keys").mongoURI;
 
-// Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI || db, { 
-  useNewUrlParser: true, useUnifiedTopology: true})
-  .then(() => console.log("MongoDB successfully connected"))
-  .catch(err => console.log(err));
+const MONGODB_URI = process.env.MONGODB_URI || db
 
+// Connect to MongoDB
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+
+const connected = mongoose.connection;
+
+// Error / success
+connected.on('error', (err) => console.log(err.message + ' is Mongod not running?'));
+connected.on('connected', () => console.log('mongo connected: ', MONGODB_URI));
+connected.on('disconnected', () => console.log('mongo disconnected'));
+
+
+// open the connection to mongo
+connected.on('open' , ()=>{});
 
 // Bodyparser middleware
 app.use(bodyParser.urlencoded({extended: false}));
@@ -59,4 +68,4 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 
-app.listen(port, () => console.log(`Server running on port ${port} !`));
+app.listen(port, () => console.log("Server running on port:", port));
