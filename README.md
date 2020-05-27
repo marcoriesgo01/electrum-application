@@ -53,7 +53,13 @@ People in the United States with financial assets in need of organization. Users
 * Relationships: Each of the models above is related to a specific user in order for authorization to work efficiently.
 
 ### Installation Instructions
-yarn install
+For live demo purposes, use the following credentials when prompted to link a bank account with Plaid:
+Username: user_good
+Password: pass_good
+
+To clone repo:
+* git clone
+* npm install
 
 ### Trello User Stories:
 [User Stories - Electrum](https://trello.com/b/60ZlDlbf/electrum-stories)
