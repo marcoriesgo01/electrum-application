@@ -9,7 +9,7 @@ https://github.com/marcoriesgo01/electrum-client
 ### Link to Backend Github Repository:
 https://github.com/marcoriesgo01/electrum-api
 
-Electrum is an all-in-one personal finance application for users to link their bank accounts so that they can analyze all of their financial data. Electrum users are able to link and analyze their bank accounts, create and optimize monthly budgets, review monthly bills, and track their investments in real-time. 
+Electrum is an all-in-one personal finance application for users to link their bank accounts and analyze all of their financial data. Electrum users are able to link and analyze their bank transactions, create and optimize monthly budgets, review monthly bills, and track their investments in real-time. 
 
 ## Technologies Used
 * HTML 
@@ -21,20 +21,20 @@ Electrum is an all-in-one personal finance application for users to link their b
 * MongoDB
 * Express
 * [Redux](https://redux.js.org/) - Used for state management on banking and authorization
-* Axios - Used for connecting to the API for authorization and banking.
+* Axios - Used for connecting to the API for authorization and banking
 * Fetch - Used for API communication for user information
 * JWT Authorization
 * Passport
 * Mongoose
 * [Plaid API](https://plaid.com/) - Used for connecting user bank accounts to Electrum
 * Moment.js - Used for expirations and bank transaction dates
-* [Chart.js](https://www.chartjs.org/) - Used to analyze the user's information
+* [Chart.js](https://www.chartjs.org/) - Used to analyze the user's financial data
 * [IEX Cloud API](https://iexcloud.io/) - Used to analyze user's investments and their current value
-* [Validator](https://www.npmjs.com/package/validator) - Used to verify that useer information is valid.
+* [Validator](https://www.npmjs.com/package/validator) - Used to verify that user information is valid.
 
 
 ### Problem: 
-There is currently no single app for users to organize all of their personal finance users need to use multiple applications with different information, which is time-consuming and sometimes confusing.
+There is currently no single app for users to organize all of their personal finances. Users need to use multiple applications with different information, which is time-consuming and confusing.
 
 ### General App Idea/Purpose: 
 An app that allows users to securely organize all of their personal finances including budgeting, expenses, recurring bills, and investments in one single application.
