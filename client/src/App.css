@@ -54,6 +54,9 @@ a {
     width: 65%;
     min-height: 100vh;
     float: right;
+    background: url(img/landing.png);
+    background-size: 100%;
+    background-repeat: inherit;
 }
 
 #landing-image {

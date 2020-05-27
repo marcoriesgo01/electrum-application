@@ -27,7 +27,7 @@ class Landing extends Component {
           </Link>
         </div>
         <div className="landing-right-container">
-          <img src={landing} id="landing-image" alt="Landing" />
+          {/* <img src={landing} id="landing-image" alt="Landing" /> */}
         </div>
       </div>
     );
